@@ -39,8 +39,6 @@ Language: C++
 
 Compiler: g++ (C++11 or later)
 
-
-./tea_stall
 *Sample Output*
 ------ Welcome to Tea Stall ------
 1. Tea-------10INR
@@ -64,3 +62,35 @@ Total amount       :           20
 SGST               :           0.5
 CGST               :           0.5
 Total amount to pay:           21
+----------------------------------------------------------------------------------------------------------------
+
+📚 Library Management System
+A simple C++ console-based Library Management System that helps manage books in a small library.
+It provides basic operations like adding books, checking them out, returning them, and viewing details.
+Each book gets a unique auto-generated Book ID, and the system tracks availability status.
+________________________________________
+📌 Features
+•	➕ Add a Book – store title & author, auto-generate Book ID
+•	📖 Check Out a Book – mark book as unavailable
+•	🔄 Return a Book – make book available again
+•	👀 Display Book Details – view information about a book using its ID
+•	🎯 Simple menu-driven interface
+________________________________________
+🛠️ Technologies Used
+•	Language: C++
+•	Compiler: g++ (C++11 or later)
+________________________________________
+📖 Sample Output
+========= LIBRARY MANAGEMENT SYSTEM =======
+1. Add a Book
+2. Check Out a Book
+3. Return a Book
+4. Display Book Details
+0. Exit
+------------------------------------------
+Enter your choice: 1
+
+Enter the title: C++ Programming
+Enter the author: Bjarne Stroustrup
+Congrats! Book Added Successfully. Your Book ID is 501
+________________________________________
