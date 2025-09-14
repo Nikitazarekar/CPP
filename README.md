@@ -1,5 +1,5 @@
 # CPP
-🍵 Tea Stall Billing System
+**🍵 Tea Stall Billing System**
 
 This is a simple C++ console application that simulates a Tea Stall billing system.
 It provides a menu-driven program where customers can order Tea, Coffee, Bun Maska, and Water.
@@ -7,7 +7,7 @@ The system then generates a detailed bill that includes itemized costs, SGST, CG
 
 The bill number auto-increments with each new bill, and all item quantities are reset after generating a bill.
 
-** Features**
+ **Features:**
 
 Simple menu-driven interface
 
@@ -33,13 +33,13 @@ Final payable amount
 
 Reset quantities after each bill
 
-🛠️ Technologies Used
+**🛠️ Technologies Used**
 
 Language: C++
 
 Compiler: g++ (C++11 or later)
 
-*Sample Output*
+***Sample Output***
 ------ Welcome to Tea Stall ------
 1. Tea-------10INR
 2. Coffee----50INR
@@ -62,25 +62,27 @@ Total amount       :           20
 SGST               :           0.5
 CGST               :           0.5
 Total amount to pay:           21
-----------------------------------------------------------------------------------------------------------------
 
-📚 Library Management System
+-----------------------------------------------------------------------------------------------------
+
+
+**📚 Library Management System**
 A simple C++ console-based Library Management System that helps manage books in a small library.
 It provides basic operations like adding books, checking them out, returning them, and viewing details.
 Each book gets a unique auto-generated Book ID, and the system tracks availability status.
 ________________________________________
-📌 Features
+**📌 Features**
 •	➕ Add a Book – store title & author, auto-generate Book ID
 •	📖 Check Out a Book – mark book as unavailable
 •	🔄 Return a Book – make book available again
 •	👀 Display Book Details – view information about a book using its ID
 •	🎯 Simple menu-driven interface
 ________________________________________
-🛠️ Technologies Used
+**🛠️ Technologies Used**
 •	Language: C++
 •	Compiler: g++ (C++11 or later)
 ________________________________________
-📖 Sample Output
+**📖 Sample Output**
 ========= LIBRARY MANAGEMENT SYSTEM =======
 1. Add a Book
 2. Check Out a Book
