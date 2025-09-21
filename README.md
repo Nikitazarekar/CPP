@@ -1,5 +1,88 @@
                                                 ## CPP
+------------------------------------------------------------------------------------------------------------------------
 
+# Library Management System
+
+## Project Overview
+
+This program is a **Library Management System** implemented in C++.
+It allows users to **add books, check out books, return books, and view book details**.
+Each book has a **unique Book ID, title, author, and availability status**.
+The system demonstrates **object-oriented programming concepts** like classes, objects, and static members.
+It is a **menu-driven console application** designed to be interactive and beginner-friendly.
+
+---
+
+## Features
+
+* Add a new book with **title and author**; the system assigns a **unique Book ID** automatically.
+* Check out a book, changing its status to **unavailable**.
+* Return a book, changing its status back to **available**.
+* Display details of any book including **ID, title, author, and availability**.
+* Handles **invalid inputs** such as checking out or returning non-existent books.
+
+---
+
+## Classes and Methods
+
+* **Book (Class)** – Represents each book with attributes like `bookID`, `title`, `author`, and `isAvailable`.
+* **Static Member** – `bookId_generator` ensures each book gets a **unique ID**.
+* **addBook(title, author)** – Adds a new book to the system.
+* **checkOut() / returnBook()** – Update the availability status of the book.
+* **display()** – Displays book information; **getBookID()** retrieves the Book ID.
+
+---
+
+## How It Works
+
+1. The program displays a **menu** with options to add, check out, return, or display books.
+2. Users select an option by entering the corresponding number.
+3. For **addBook**, the system prompts for title and author and generates a unique Book ID.
+4. For **checkOut/return/display**, the system searches the book by ID and performs the selected operation.
+5. The menu repeats until the user selects **Exit**, allowing multiple operations in one session.
+
+---
+
+## Sample Output
+
+```
+========= LIBRARY MANAGEMENT SYSTEM =======
+1.Add a Book
+2.Check Out a Book
+3.Return a Book
+4.Display Book Details
+0. Exit
+
+Enter the choice: 1
+Enter the title: C++ Basics
+Enter the author: John Doe
+Congrates Book Added Successfully !! Your Book ID is 501
+
+Enter the choice: 2
+Enter the Book id to check out: 501
+Book ID501 has been checked out Successfully
+
+Enter the choice: 4
+Enter the book id to Display: 501
+BookID501
+TitleC++ Basics
+AuthorJohn Doe
+Statuschecked out
+```
+
+---
+
+## Learning Outcomes
+
+* Learn **object-oriented programming** concepts in C++.
+* Understand **static members** for generating unique IDs.
+* Practice **menu-driven console applications**.
+* Manage **arrays of objects** and perform CRUD operations.
+* Implement **user-friendly input/output** handling for a real-world scenario.
+
+---
+
+-------------------------------------------------------------------------------------------------------------------------------
 # Tea Stall Billing System
 
 ## Project Overview
