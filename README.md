@@ -1,53 +1,47 @@
-# CPP
-**🍵 Tea Stall Billing System**
+                                                ## CPP
 
-This is a simple C++ console application that simulates a Tea Stall billing system.
-It provides a menu-driven program where customers can order Tea, Coffee, Bun Maska, and Water.
-The system then generates a detailed bill that includes itemized costs, SGST, CGST, and a final payable amount.
+# Tea Stall Billing System
 
-The bill number auto-increments with each new bill, and all item quantities are reset after generating a bill.
+## Project Overview
 
- **Features:**
+This is a **menu-driven console application** simulating a tea stall billing system.
+It allows customers to order **Tea, Coffee, Bun Maska, and Water** and generate a bill.
+The program calculates the **total amount**, applies **SGST and CGST**, and shows the final payable amount.
+It demonstrates **basic C++ concepts** such as `switch-case`, loops, arithmetic operations, and input/output.
+The system is simple, interactive, and easy to use for beginners learning C++.
 
-Simple menu-driven interface
+---
 
-Order items:
+## Features
 
-Tea – ₹10
+* Order multiple items with specified **quantity**.
+* Generate a **bill** with item-wise prices and quantities.
+* Calculates **total, SGST, CGST**, and final payable amount.
+* Reset quantities automatically after generating the bill.
+* Handles **invalid menu choices** with appropriate messages.
 
-Coffee – ₹50
+---
 
-Bun Maska – ₹100
+## How It Works
 
-Water – ₹20
+1. The program displays a **menu** of items with their prices.
+2. The user selects an item by entering the corresponding **number**.
+3. The program prompts for **quantity** of the selected item.
+4. Selecting **Generate Bill** calculates the total and adds taxes.
+5. The bill is displayed, and all quantities are reset for the next order.
 
-Auto-increment bill number
+---
 
-Detailed bill with:
+## Sample Output
 
-Itemized breakdown
-
-SGST (2.5%) and CGST (2.5%)
-
-Final payable amount
-
-Reset quantities after each bill
-
-**🛠️ Technologies Used**
-
-Language: C++
-
-Compiler: g++ (C++11 or later)
-
-***Sample Output***
+```
 ------ Welcome to Tea Stall ------
 1. Tea-------10INR
-2. Coffee----50INR
+2. Coffee----40INR
 3. Bun Maska-100INR
 4. Water-----20INR
 5. Generate bill:
 0. Exit
-----------------------------------
 Enter your choice: 1
 You selected Tea
 Enter number of items: 2
@@ -62,37 +56,19 @@ Total amount       :           20
 SGST               :           0.5
 CGST               :           0.5
 Total amount to pay:           21
+```
+
+---
+
+## Learning Outcomes
+
+* Understand **menu-driven programming** in C++.
+* Learn **switch-case statements** and how to handle multiple choices.
+* Perform **arithmetic calculations** for billing and taxes.
+* Learn **variable management and resetting** for multiple transactions.
+* Practice **user-friendly input/output** formatting in console applications.
+
 
 -----------------------------------------------------------------------------------------------------
 
 
-**📚 Library Management System**
-A simple C++ console-based Library Management System that helps manage books in a small library.
-It provides basic operations like adding books, checking them out, returning them, and viewing details.
-Each book gets a unique auto-generated Book ID, and the system tracks availability status.
-________________________________________
-**📌 Features**
-•	➕ Add a Book – store title & author, auto-generate Book ID
-•	📖 Check Out a Book – mark book as unavailable
-•	🔄 Return a Book – make book available again
-•	👀 Display Book Details – view information about a book using its ID
-•	🎯 Simple menu-driven interface
-________________________________________
-**🛠️ Technologies Used**
-•	Language: C++
-•	Compiler: g++ (C++11 or later)
-________________________________________
-**📖 Sample Output**
-========= LIBRARY MANAGEMENT SYSTEM =======
-1. Add a Book
-2. Check Out a Book
-3. Return a Book
-4. Display Book Details
-0. Exit
-------------------------------------------
-Enter your choice: 1
-
-Enter the title: C++ Programming
-Enter the author: Bjarne Stroustrup
-Congrats! Book Added Successfully. Your Book ID is 501
-________________________________________
