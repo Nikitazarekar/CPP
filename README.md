@@ -71,4 +71,69 @@ Total amount to pay:           21
 
 -----------------------------------------------------------------------------------------------------
 
+# Chinese Zodiac Finder
+
+## Project Overview
+
+This program helps users find their **Chinese Zodiac sign** based on their birth year.
+It provides a simple **menu-driven console interface** with all 12 zodiac animals listed.
+The user enters their **name and birth year**, and the program calculates their zodiac type.
+It also displays **characteristics associated with the zodiac sign** for better understanding.
+The project demonstrates **basic C++ programming concepts** like input/output, switch-case, and arithmetic operations.
+
+---
+
+## Features
+
+* Enter **your name and birth year** to find your zodiac sign.
+* Displays the **zodiac type** along with its **personality traits**.
+* Provides a **menu listing all 12 Chinese Zodiac animals**.
+* Handles **invalid inputs** gracefully with error messages.
+* A **fun and interactive console program** suitable for beginners.
+
+---
+
+## How It Works
+
+1. The user is prompted to enter their **name**.
+2. The user enters their **birth year**.
+3. The program calculates the zodiac using:
+
+   ```
+   zodiacIndex = (year - 4) % 12
+   ```
+4. A **switch-case** statement displays the zodiac animal and its traits.
+5. Users can **try again or exit** based on the menu options.
+
+---
+
+## Sample Output
+
+```
+....CHINESE ZODIAC FINDER....
+1.Rat
+2.Ox
+3.Tiger
+...
+Enter your Name: Alice
+Enter your birth Year: 1996
+
+Name: Alice
+Year: 1996
+Congrats ...! Alice
+You are type <0> and you have 
+Rat: Intelligent, adaptable, quick-witted, charming.
+```
+
+---
+
+## Learning Outcomes
+
+* Understand **basic C++ input/output operations** using `cin` and `cout`.
+* Learn **switch-case statements** for decision-making.
+* Practice **arithmetic operations** for zodiac calculation.
+* Develop **menu-driven console programs**.
+* Gain experience in **user-friendly program design**.
+
+---
 
