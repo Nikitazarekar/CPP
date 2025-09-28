@@ -219,4 +219,112 @@ Rat: Intelligent, adaptable, quick-witted, charming.
 * Gain experience in **user-friendly program design**.
 
 ---
+-----------------------------------------------------------------------------------------------------------------
+
+# Smart Parking Lot Management System
+
+## Overview
+This is a **menu-driven C++ program** to manage a small parking lot.  
+It allows users to **park vehicles, remove vehicles, and view parking status**, along with **automatic billing based on parking duration**.
+
+---
+
+## Features
+- Supports **multiple parking slots** (configurable).  
+- **Entry & Exit tracking** with ticket numbers.  
+- Records **vehicle number** and **entry time**.  
+- Calculates **parking duration** and **bill** (INR per hour).  
+- Displays **current parking status** including occupied/free slots and entry times.  
+- Menu-driven and beginner-friendly.
+
+---
+
+## How It Works
+1. **Park Vehicle:**  
+   - Assigns the next available parking slot.  
+   - Records entry time using the system clock.  
+   - Generates a ticket number.  
+
+2. **Remove Vehicle (Exit & Billing):**  
+   - Enter the slot number to remove a vehicle.  
+   - Calculates parking duration (rounded up to the next hour).  
+   - Calculates the bill based on a fixed rate per hour.  
+   - Frees up the slot for future use.  
+
+3. **Display Parking Status:**  
+   - Shows all slots, their status (Occupied/Free), vehicle numbers, and entry times.
+
+---
+
+## How to Run
+1. Clone the repository or download the code file.  
+2. Compile the program using a C++ compiler:
+   ```bash
+   g++ parking_lot.cpp -o parking_lot
+````
+
+3. Run the program:
+
+   ```bash
+   ./parking_lot   # Linux/Mac
+   parking_lot.exe # Windows
+   ```
+4. Follow the on-screen menu to interact with the system.
+
+---
+
+## Example Output
+
+**1. Parking a Vehicle**
+
+```
+--- Smart Parking System ---
+1. Park Vehicle
+2. Remove Vehicle (Exit & Billing)
+3. Display Parking Status
+0. Exit
+Enter your choice: 1
+
+Enter Vehicle Number: MH12AB1234
+Ticket No: 100, Slot No: 1
+Entry Time: Sun Sep 29 10:15:43 2025
+```
+
+**2. Parking Status**
+
+```
+Slot    Status      Vehicle No      Entry Time
+1       Occupied    MH12AB1234     Sun Sep 29 10:15:43 2025
+2       Free        -              
+3       Free        -              
+4       Free        -              
+5       Free        -              
+```
+
+**3. Removing a Vehicle (Exit & Billing)**
+
+```
+Enter Slot No to remove vehicle: 1
+
+--- Receipt ---
+Vehicle Number: MH12AB1234
+Slot Number   : 1
+Hours Parked  : 2
+Bill Amount   : INR 40.00
+Entry Time    : Sun Sep 29 10:15:43 2025
+Exit Time     : Sun Sep 29 12:15:50 2025
+----------------
+```
+
+---
+
+## Libraries Used
+
+* `<iostream>`: For input/output operations.
+* `<ctime>`: To record and display **entry and exit times**.
+* `<cmath>`: To **round parking duration** using `ceil()`.
+
+---
+
+
 
