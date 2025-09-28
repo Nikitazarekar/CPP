@@ -263,13 +263,6 @@ It allows users to **park vehicles, remove vehicles, and view parking status**, 
    g++ parking_lot.cpp -o parking_lot
 ````
 
-3. Run the program:
-
-   ```bash
-   ./parking_lot   # Linux/Mac
-   parking_lot.exe # Windows
-   ```
-4. Follow the on-screen menu to interact with the system.
 
 ---
 
